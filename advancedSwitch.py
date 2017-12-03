@@ -12,6 +12,7 @@ class AdvancedSwitch(app_manager.RyuApp):
     def __init__(self, *args, **kwargs):
         super(AdvancedSwitch, self).__init__(*args, **kwargs)
         self.macports = {}
+        self.packets = {}
 
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
     def switch_features_handler(self, ev):
@@ -33,6 +34,10 @@ class AdvancedSwitch(app_manager.RyuApp):
         mod = parser.OFPFlowMod(datapath=datapath, priority=priority, match=match, instructions=inst)
         datapath.send_msg(mod)
 
+     def spineSwitch()
+
+     def leafSwitch()
+
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     def _packet_in_handler(self, ev):
-        
+        msg = ev.msg
