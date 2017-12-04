@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Author:muzixing, Customized by Urs Forrer und MIchael Güntensperger
-# Time:2016/04/13, motified on 03.12.2017
+# Author:muzixing
+# Time:2016/04/13
 #
 
 from ryu.base import app_manager
